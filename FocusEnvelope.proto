@@ -5,6 +5,7 @@ import "FocusEvent.proto";
 package Focus;
 
 message Envelope {
-    string clientID = 1;
-    repeated Focus.Event events = 2;
+    string deviceID = 1;
+    string jwt = 2;
+    repeated Focus.Event events = 3;
 }
